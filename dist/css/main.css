@@ -94,10 +94,12 @@ nav .left-section .nav-list {
   display: flex;
   list-style-type: none;
   padding-left: 0;
-  padding-bottom: 0.2rem;
+  color: hsl(0deg, 0%, 41%);
 }
 nav .left-section .nav-list .nav-list-item {
   padding-right: 40px;
+  font-size: 14px;
+  font-weight: 500;
 }
 nav .left-section .nav-list .nav-list-item.features {
   display: flex;
@@ -112,6 +114,19 @@ nav .left-section .nav-list .nav-list-item.features img:last-of-type {
 nav .left-section .nav-list .nav-list-item.features p {
   margin-right: 9px;
 }
+nav .left-section .nav-list .nav-list-item.company {
+  display: flex;
+  align-items: center;
+}
+nav .left-section .nav-list .nav-list-item.company img:first-of-type {
+  display: block;
+}
+nav .left-section .nav-list .nav-list-item.company img:last-of-type {
+  display: none;
+}
+nav .left-section .nav-list .nav-list-item.company p {
+  margin-right: 9px;
+}
 nav .left-section .nav-list .nav-list-item:hover {
   cursor: pointer;
 }
@@ -120,6 +135,23 @@ nav .left-section .features-drop-down {
 }
 nav .left-section .company-drop-down {
   display: none;
+}
+nav .right-section {
+  display: flex;
+  align-items: center;
+}
+nav .right-section button {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  color: hsl(0deg, 0%, 41%);
+  font-size: 14px;
+}
+nav .right-section .register {
+  margin-left: 40px;
+  border: 1.5px solid hsl(0deg, 0%, 41%);
+  border-radius: 14px;
+  padding: 13px 22px;
 }
 
 /*# sourceMappingURL=main.css.map */

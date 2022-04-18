@@ -30,12 +30,31 @@ nav {
    display: flex;
    list-style-type: none;
    padding-left: 0;
-   padding-bottom: 0.2rem;
+   color: $MediumGray;
 
    .nav-list-item {
     padding-right: 40px;
+    font-size: 14px;
+
+    font-weight: 500;
 
     &.features {
+     display: flex;
+     align-items: center;
+
+     img:first-of-type {
+      display: block;
+     }
+
+     img:last-of-type {
+      display: none;
+     }
+
+     p {
+      margin-right: 9px;
+     }
+    }
+    &.company {
      display: flex;
      align-items: center;
 
@@ -64,6 +83,26 @@ nav {
 
   .company-drop-down {
    display: none;
+  }
+ }
+
+ .right-section {
+  display: flex;
+  align-items: center;
+
+  button {
+   border: 0;
+   outline: none;
+   background-color: transparent;
+   color: $MediumGray;
+   font-size: 14px;
+  }
+
+  .register {
+   margin-left: 40px;
+   border: 1.5px solid $MediumGray;
+   border-radius: 14px;
+   padding: 13px 22px;
   }
  }
 }

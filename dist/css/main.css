@@ -146,6 +146,7 @@ nav .left-section .nav-list .nav-list-item:hover {
 }
 nav .left-section .features-drop-down {
   position: absolute;
+  opacity: 0;
   width: 153px;
   height: 160px;
   z-index: 1;
@@ -154,31 +155,64 @@ nav .left-section .features-drop-down {
   background: #ffffff;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.149126);
   border-radius: 10px;
+  transition: all 300ms ease-in-out;
+}
+nav .left-section .features-drop-down.active {
+  opacity: 1;
 }
 nav .left-section .features-drop-down ul {
   list-style-type: none;
-  margin: 0;
-  padding: 2rem 1rem;
   height: 100%;
+  padding-left: 1.5rem;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  gap: 0.8rem;
 }
 nav .left-section .features-drop-down ul li {
   display: flex;
   align-items: center;
 }
+nav .left-section .features-drop-down ul li .icon-wrapper {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
 nav .left-section .features-drop-down ul a {
   text-decoration: none;
   font-size: 14px;
-}
-nav .left-section .features-drop-down ul a img {
-  margin-right: 1rem;
+  color: hsl(0deg, 0%, 41%);
 }
 nav .left-section .company-drop-down {
-  display: none;
+  opacity: 0;
+  width: 116px;
+  height: 128px;
+  position: absolute;
+  z-index: 1;
+  left: 306px;
+  top: 80px;
+  background: #ffffff;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.149126);
+  border-radius: 10px;
+  transition: all 300ms ease-in-out;
+}
+nav .left-section .company-drop-down.active {
+  opacity: 1;
+}
+nav .left-section .company-drop-down ul {
+  list-style-type: none;
+  height: 100%;
+  padding-left: 1.5rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.7rem;
+}
+nav .left-section .company-drop-down ul a {
+  text-decoration: none;
+  font-size: 14px;
+  color: hsl(0deg, 0%, 41%);
 }
 nav .right-section {
   display: flex;

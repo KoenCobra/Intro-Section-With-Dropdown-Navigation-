@@ -88,6 +88,10 @@ main {
   position: relative;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -119,11 +123,17 @@ nav .left-section .nav-list .nav-list-item.features {
   display: flex;
   align-items: center;
 }
-nav .left-section .nav-list .nav-list-item.features img:first-of-type {
+nav .left-section .nav-list .nav-list-item.features .features-arrow-up {
   display: block;
 }
-nav .left-section .nav-list .nav-list-item.features img:last-of-type {
+nav .left-section .nav-list .nav-list-item.features .features-arrow-up.active {
   display: none;
+}
+nav .left-section .nav-list .nav-list-item.features .features-arrow-down {
+  display: none;
+}
+nav .left-section .nav-list .nav-list-item.features .features-arrow-down.active {
+  display: block;
 }
 nav .left-section .nav-list .nav-list-item.features p {
   margin-right: 9px;
@@ -132,11 +142,17 @@ nav .left-section .nav-list .nav-list-item.company {
   display: flex;
   align-items: center;
 }
-nav .left-section .nav-list .nav-list-item.company img:first-of-type {
+nav .left-section .nav-list .nav-list-item.company .company-arrow-up {
   display: block;
 }
-nav .left-section .nav-list .nav-list-item.company img:last-of-type {
+nav .left-section .nav-list .nav-list-item.company .company-arrow-up.active {
   display: none;
+}
+nav .left-section .nav-list .nav-list-item.company .company-arrow-down {
+  display: none;
+}
+nav .left-section .nav-list .nav-list-item.company .company-arrow-down.active {
+  display: block;
 }
 nav .left-section .nav-list .nav-list-item.company p {
   margin-right: 9px;
@@ -300,6 +316,29 @@ nav .right-section .register:hover {
   background-image: url("../../images/image-hero-desktop.png");
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 900px) {
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  .main-grid .info {
+    margin: 0;
+  }
+  .main-grid .hero-placeholder {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

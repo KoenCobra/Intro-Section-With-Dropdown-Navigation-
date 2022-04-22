@@ -23,6 +23,10 @@ main {
  position: relative;
 }
 
+.mobile-nav {
+ display: none;
+}
+
 nav {
  display: flex;
  justify-content: space-between;
@@ -56,12 +60,18 @@ nav {
      display: flex;
      align-items: center;
 
-     img:first-of-type {
+     .features-arrow-up {
       display: block;
+      &.active {
+       display: none;
+      }
      }
 
-     img:last-of-type {
+     .features-arrow-down {
       display: none;
+      &.active {
+       display: block;
+      }
      }
 
      p {
@@ -72,12 +82,18 @@ nav {
      display: flex;
      align-items: center;
 
-     img:first-of-type {
+     .company-arrow-up {
       display: block;
+      &.active {
+       display: none;
+      }
      }
 
-     img:last-of-type {
+     .company-arrow-down {
       display: none;
+      &.active {
+       display: block;
+      }
      }
 
      p {
@@ -266,5 +282,29 @@ nav {
   background-image: url("../../images/image-hero-desktop.png");
   background-size: 100%;
   background-repeat: no-repeat;
+ }
+}
+
+@media (max-width: 900px) {
+ .mobile-nav {
+  display: flex;
+  align-items: center;
+ }
+
+ .desktop-nav {
+  display: none;
+ }
+ .main-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+
+  .info {
+   margin: 0;
+  }
+
+  .hero-placeholder {
+   display: none;
+  }
  }
 }
